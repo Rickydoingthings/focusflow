@@ -3,15 +3,7 @@
     "version": ">= 9.0.0"
   },
   "build": {
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal",
-      "android": {
-        "buildType": "apk"
-      }
-    },
     "preview": {
-      "distribution": "internal",
       "android": {
         "buildType": "apk"
       }
@@ -19,14 +11,6 @@
     "production": {
       "android": {
         "buildType": "app-bundle"
-      }
-    }
-  },
-  "submit": {
-    "production": {
-      "android": {
-        "serviceAccountKeyPath": "./google-services-key.json",
-        "track": "internal"
       }
     }
   }

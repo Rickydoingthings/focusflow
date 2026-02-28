@@ -1,18 +1,14 @@
 {
   "cli": {
-    "version": ">= 9.0.0"
+    "version": ">= 9.0.0",
+    "appVersionSource": "remote"
   },
   "build": {
     "preview": {
       "android": {
         "buildType": "apk",
-        "credentialsSource": "remote"
-      }
-    },
-    "production": {
-      "android": {
-        "buildType": "app-bundle",
-        "credentialsSource": "remote"
+        "credentialsSource": "remote",
+        "keystoreSource": "managed"
       }
     }
   }
